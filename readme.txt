@@ -42,7 +42,10 @@ Their requests are intentionally blocked from continuing to load any WordPress c
 * Initial release.
 
 = 0.2 =
-* Initial release.
+* Bug fixes.
+
+= 0.3 =
+* Added optional data sharing features.
 
 == Upgrade Notice ==
 
@@ -51,3 +54,6 @@ Their requests are intentionally blocked from continuing to load any WordPress c
 
 = 0.2 =
 * Fixes setting screen 
+
+= 0.3 =
+* Added opt-in data sharing tool.  Helps us help you!
