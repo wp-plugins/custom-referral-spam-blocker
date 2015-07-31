@@ -3,7 +3,7 @@
  * Plugin Name: Custom Referral Spam Blocker
  * Plugin URI: http://jacobbaron.net/
  * Description: This plugin blocks referral spam bots which are screwing up your Google Analytics data.
- * Version: 0.1
+ * Version: 0.2
  * Author: csmicfool
  * Author URI: http://jacobbaron.net
  * License: GPLv2+
@@ -85,7 +85,7 @@ function crsb_spammers_list_render(  ) {
 			
 	if((strlen($spammers)==0) && ($spammers<>$spammers_file)){
 		//import from flat file if blank
-		$spammers = crsb_return_file_restore();
+		$spammers = crsb_return_file();
 	}
 	?>
 	<textarea cols='40' rows='25' name='crsb_spammers_list'><?php echo $spammers; ?></textarea>
@@ -122,13 +122,6 @@ function crsb_options_page(  ) {
 function crsb_return_file(  ) {
 	
 	$spammers = file_get_contents(plugin_dir_path(__FILE__).'spammers.txt');
-	return $spammers;
-	
-}
-
-function crsb_return_file_restore(  ) {
-	
-	$spammers = file_get_contents(plugin_dir_path(__FILE__).'spammers-restore.txt');
 	return $spammers;
 	
 }

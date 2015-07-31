@@ -41,7 +41,13 @@ Their requests are intentionally blocked from continuing to load any WordPress c
 = 0.1 =
 * Initial release.
 
+= 0.2 =
+* Initial release.
+
 == Upgrade Notice ==
 
 = 0.1 =
 * This is the big bang, make it happen cap'n!
+
+= 0.2 =
+* Fixes setting screen 
